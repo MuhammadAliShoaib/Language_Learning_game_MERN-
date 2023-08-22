@@ -1,0 +1,272 @@
+.App {
+  text-align: center;
+  background-color: #badbef;
+  height: 86vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.quiz {
+  background-color: white;
+  width: 500px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+}
+
+.box h1 {
+  margin: 10px;
+  padding: 10px;
+  background-color: #4c7aee;
+  color: white;
+}
+
+.sub {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 0 15px;
+}
+
+.sub h3 {
+  margin: 0;
+}
+
+.questionBox h1 {
+  background-color: #E8E2E2;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.answerBox {
+  margin: 10px;
+}
+
+.answerBox button {
+  margin: 10px;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #cce7d0;
+  padding: 5px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.answerBox button:hover {
+  background-color: #E8E2E2;
+}
+
+.answerBox button:focus {
+  background-color: green;
+  color: white;
+}
+
+.statusIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  padding: 10px 15px 10px 15px;
+}
+
+.buttons button {
+  padding: 10px;
+  width: 100px;
+}
+
+.buttons .previous,
+.buttons .next ,.register{
+  color: white;
+  font-size: 17px;
+}
+
+.buttons .previous {
+  justify-content: start;
+  background-color: red;
+  margin-right: 15px;
+}
+
+.register{
+  background-color: rgb(40, 130, 214);
+  padding: 10px;
+}
+
+.buttons .next {
+  margin-left: 15px;
+  background-color: green;
+}
+
+.bar {
+  width: 200px;
+  height: 100vh;
+  border-right: 1px solid black;
+}
+
+.bar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.signup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupBox {
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  height: 70vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: grid;
+  grid-template-columns: 2rem 4fr 4fr 2rem;
+}
+
+.signupDetails {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupImage {
+  grid-column: 3/4;
+}
+
+.signupDetails input {
+  border: 0;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
+
+.inputIcon {
+  margin-left: 10px;
+  /* Add spacing between icon and input */
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 70%;
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupDetails form{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.loginDetails form{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginDetails input {
+  border: 0;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
+
+
+.loginDetails {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media(max-width:1080px) {
+  .signupBox {
+    width: 70%;
+    height: 80vh;
+  }
+}
+
+
+@media(max-width:998px) {
+  .signupBox {
+    grid-template-columns: 1rem 4fr 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signupDetails{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+  }
+
+  .signupImage{
+    flex-grow: 1;
+  }
+
+  .signupImage img{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.red{
+  color: red;
+}
+
+.signupImage{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
